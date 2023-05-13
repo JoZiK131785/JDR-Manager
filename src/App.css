@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+:root {
+    /* COLOR */
+    --color-black : #000000;
+    --color-black-shadow : rgba(0, 0, 0, .5);
+    --color-white : #ffffff;
+    --color-white-shadow : rgba(255, 255, 255, 0.5);
+
+    --color-brown : rgb(165, 83, 0);
+    --color-brown-shadow : rgb(165, 83, 0, .5);
+    --color-brown-dark : rgb(69, 35, 0);
+    --color-brown-dark-shadow : rgb(69, 35, 0, .5);
+    --color-brown-dark-strong-shadow : rgb(69, 35, 0, .7);
+    --color-purple-light-shadow : rgba(105, 61, 11, .5);
+
+    --color-warrior: rgba(167, 0, 0, 0.7);
+    --color-warrior-dark: rgb(102, 0, 0);
+    --color-sorcerer: rgba(58, 56, 231, 0.7);
+    --color-sorcerer-dark: rgb(34, 32, 134);
+    --color-thief: rgba(7, 150, 0, 0.7);
+    --color-thief-dark: rgb(13, 99, 9);
+
+    --color-detruction-shadow : rgba(159, 52, 52, 0.5);
+    --color-guerison-shadow : rgba(212, 191, 0, 0.5);
+    --color-illusion-shadow : rgba(143, 52, 159, 0.5);
+    --color-alteration-shadow : rgba(52, 159, 59, 0.5);
+    --color-conjuration-shadow : rgba(65, 52, 159, 0.5);
+
+    /* FONTS */
+    --font-main : 'Black Ops One';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* #region ##### FONTS ##### */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  /* #region BLACK-OPS-ONE FONT */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    /* black-ops-one-regular - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Black Ops One';
+        font-style: normal;
+        font-weight: 400;
+        src: url('../public/fonts/black-ops-one-v20-latin-regular.eot'); /* IE9 Compat Modes */
+        src: url('../public/fonts/black-ops-one-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                url('../public/fonts/black-ops-one-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+                url('../public/fonts/black-ops-one-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+                url('../public/fonts/black-ops-one-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+                url('../public/fonts/black-ops-one-v20-latin-regular.svg#BlackOpsOne') format('svg'); /* Legacy iOS */
+        }
 
-.App-link {
-  color: #61dafb;
-}
+    /* #endregion */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  /* #endregion */

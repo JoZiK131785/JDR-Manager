@@ -1,0 +1,231 @@
+.home-main {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    user-select: none;
+}
+
+.container-forms {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-forms form {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.scinder {
+    width: 1px;
+    height: 20vh;
+    background-color: var(--color-brown-dark);
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+}
+
+.input {
+    min-width: 20vw;
+    padding-block: 10px;
+
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    user-select: none;
+    border: 3px solid var(--color-brown-dark);
+    background-color: var(--color-brown-dark-shadow);
+
+    transition: .3s;
+}
+
+.input::placeholder {
+    color: var(--color-black);
+}
+
+.input:hover {
+    scale: 1.03;
+    background-color: var(--color-brown-shadow);
+    box-shadow: 10px 10px 10px var(--color-black-shadow);
+}
+
+.play-button {
+    min-width: 30%;
+    padding-block: 10px;
+    padding-inline: 30px;
+
+    border-radius: 30px;
+    border: none;
+    color: var(--color-brown-dark);
+    border: 3px solid var(--color-brown-dark);
+    background-color: var(--color-brown);
+
+    text-align: center;
+    user-select: none;
+
+    transition: .3s;
+}
+
+.play-button:hover {
+    scale: 1.03;
+    box-shadow: 10px 10px 10px var(--color-black-shadow);
+    color: var(--color-white-shadow);
+}
+
+
+.loader {
+    position: relative;
+    border-radius: 4px;
+    background-color: var(--color-brown-dark);
+    animation: move 4s linear infinite , rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+0% , 20%{ transform: rotate(0deg)}
+30% , 40% { transform: rotate(90deg)}
+50% , 60% { transform: rotate(180deg)}
+70% , 80% { transform: rotate(270deg)}
+90%,  100% { transform: rotate(360deg)}
+}
+
+@media only screen and (min-width : 320px) {
+    .loader {
+        width: 54px;
+        height: 54px;
+        background-image:
+            radial-gradient(circle 5px , var(--color-brown) 100%, transparent 0),
+            radial-gradient(circle 5px , var(--color-brown) 100%, transparent 0),
+            radial-gradient(circle 5px , var(--color-brown) 100%, transparent 0),
+            radial-gradient(circle 5px , var(--color-brown) 100%, transparent 0),
+            radial-gradient(circle 5px , var(--color-brown) 100%, transparent 0),
+            radial-gradient(circle 5px , var(--color-brown) 100%, transparent 0);
+            background-repeat: no-repeat;
+        }
+        
+        @keyframes move {
+        0% ,  9%{
+            background-position:
+            -12px -15px,  -12px 0px, -12px 15px,
+            12px -15px,  12px 0px,  12px 15px;
+        }
+        10% , 25%{
+            background-position:
+            0px -15px,  -12px 0px, -12px 15px,
+            34px -15px,  12px 0px,  12px 15px;
+        }
+        30% , 45%{
+            background-position:
+            0px -34px, -12px -10px, -12px 12px,
+            34px -15px, 12px -10px, 12px 12px;
+        }
+        50% , 65% {
+            background-position:
+            0px -34px, -12px -34px, -12px 12px,
+            34px -12px, 0px -10px, 12px 12px;
+        }
+        70% , 85% {
+            background-position:
+            0px -34px, -12px -34px, 0px 12px,
+            34px -12px, 0px -10px, 34px 12px;
+        }
+        90% , 100% {
+            background-position:
+            0px -34px, -12px -34px, 0px 0px,
+            34px -12px, 0px 0px, 34px 12px;
+        }
+    }
+
+    .inputs {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .input {
+        font-size: 16px;
+    }
+
+    .play-button {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width : 800px) {
+    .inputs {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 0;
+    }
+}
+
+@media only screen and (min-width : 1920px) {
+    .loader {
+        width: 108px;
+        height: 108px;
+        background-image:
+            radial-gradient(circle 10px , var(--color-brown) 100%, transparent 0),
+            radial-gradient(circle 10px , var(--color-brown) 100%, transparent 0),
+            radial-gradient(circle 10px , var(--color-brown) 100%, transparent 0),
+            radial-gradient(circle 10px , var(--color-brown) 100%, transparent 0),
+            radial-gradient(circle 10px , var(--color-brown) 100%, transparent 0),
+            radial-gradient(circle 10px , var(--color-brown) 100%, transparent 0);
+            background-repeat: no-repeat;
+        }
+        
+        @keyframes move {
+        0% ,  9%{
+            background-position:
+            -24px -30px,  -24px 0px, -24px 30px,
+            24px -30px,  24px 0px,  24px 30px;
+        }
+        10% , 25%{
+            background-position:
+            0px -30px,  -24px 0px, -24px 30px,
+            68px -30px,  24px 0px,  24px 30px;
+        }
+        30% , 45%{
+            background-position:
+            0px -68px, -24px -20px, -24px 24px,
+            68px -30px, 24px -20px, 24px 24px;
+        }
+        50% , 65% {
+            background-position:
+            0px -68px, -24px -68px, -24px 24px,
+            68px -24px, 0px -20px, 24px 24px;
+        }
+        70% , 85% {
+            background-position:
+            0px -68px, -24px -68px, 0px 24px,
+            68px -24px, 0px -20px, 68px 24px;
+        }
+        90% , 100% {
+            background-position:
+            0px -68px, -24px -68px, 0px 0px,
+            68px -24px, 0px 0px, 68px 24px;
+        }
+    }
+
+    .input {
+        font-size: 24px;
+    }
+
+    .play-button {
+        font-size: 24px;
+    }
+}
