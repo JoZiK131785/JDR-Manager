@@ -39,7 +39,7 @@
     display: flex;
 }
 
-.input {
+.cta-brown-light {
     min-width: 20vw;
     padding-block: 10px;
 
@@ -53,17 +53,17 @@
     transition: .3s;
 }
 
-.input::placeholder {
+.cta-brown-light::placeholder {
     color: var(--color-black);
 }
 
-.input:hover {
+.cta-brown-light:hover {
     scale: 1.03;
     background-color: var(--color-brown-shadow);
     box-shadow: 10px 10px 10px var(--color-black-shadow);
 }
 
-.play-button {
+.cta-brown {
     min-width: 30%;
     padding-block: 10px;
     padding-inline: 30px;
@@ -80,7 +80,7 @@
     transition: .3s;
 }
 
-.play-button:hover {
+.cta-brown:hover {
     scale: 1.03;
     box-shadow: 10px 10px 10px var(--color-black-shadow);
     color: var(--color-white-shadow);
@@ -156,11 +156,11 @@
         gap: 2vh;
     }
 
-    .input {
+    .cta-brown-light {
         font-size: 16px;
     }
 
-    .play-button {
+    .cta-brown {
         font-size: 16px;
     }
 }
@@ -221,11 +221,11 @@
         }
     }
 
-    .input {
+    .cta-brown-light {
         font-size: 24px;
     }
 
-    .play-button {
+    .cta-brown {
         font-size: 24px;
     }
 }

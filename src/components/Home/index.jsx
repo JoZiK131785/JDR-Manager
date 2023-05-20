@@ -2,7 +2,7 @@
 
 import './index.css'
 
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 // #endregion
@@ -13,88 +13,91 @@ const Home = () => {
 
     const navigate = useNavigate();
 
-    const [registerUserName, setRegisterUserName] = useState("");
-    const [registerPassword, setRegisterPassword] = useState("");
     const [loginUserName, setLoginUserName] = useState("");
     const [loginPassword, setLoginPassword] = useState("");
-    const [playersList, setPlayersList] = useState([]);
     const [logError, setLogError] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
+    const [loaderLabel, setLoaderLabel] = useState("Chargement...");
     const usernameRef = useRef(null);
 
     // #endregion
     // #region FUNCTIONS
 
-    useEffect(() => {
-        setIsLoading(true);
-
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 4000);
-
-        /* const fetchPlayers = async () => {
-            setIsLoading(true);
-    
-            fetch("http://localhost:4000/players")
-                .then((response) => response.json())
-                .then((data) => setPlayersList(data))
-                .catch(() => setLogError(true))
-                .finally(() => setIsLoading(false))
-        };
-
-        fetchPlayers(); */
-
-    }, []);
-
-    const handleRegister = (e) => {
-        e.preventDefault();
-
-        // Enleve les apostrophes et met le texte en minuscule
-        const username = registerUserName.replace(/'/g, "").toLowerCase();
-
-        // Crée un nouvel utilisateur
-        const newUser = {
-            name: username,
-            password: registerPassword
-        };
-
-        // Ajoute le nouvel utilisateur à la liste des joueurs
-        setPlayersList([...playersList, newUser]);
-
-        // Enregistre le nouvel utilisateur dans le localstorage
-        localStorage.setItem("currentPlayer", JSON.stringify(newUser));
-
-        // Navigue vers la page de lobby
-        navigate("/tesolobby");
-    };
-
     const handleLogin = (e) => {
         e.preventDefault();
 
-        // Enleve les apostrophes et met le texte en minuscule
-        const username = loginUserName.replace(/'/g, "").toLowerCase();
+        /* const fetchCreate = async () => {
 
-        // Vérifie si l'utilisateur existe dans la liste des joueurs
-        const user = playersList.find(element => element.name.replace(/'/g, "").toLowerCase() === username);
+            setIsLoading(true);
+            setLoaderLabel("Creation du compte...");
 
-        if (user && user.password === loginPassword) {
-            // Désactive l'erreur de connexion
-            setLogError(false);
+            const url = 'https://jdr-manager-server.vercel.app/register';
+            const data = {
+                email: loginUserName,
+                password: loginPassword
+            };
+    
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then((response) => response.json())
+            .then((data) => console.log(data))
+            .catch(() => setLogError(true))
+            .finally(() => setIsLoading(false))
+        };
 
-            // Enregistre l'utilisateur dans le localstorage
-            localStorage.setItem("currentPlayer", JSON.stringify(user));
+        fetchCreate(); */
 
-            // Navigue vers la page de lobby
-            navigate("/tesolobby");
-        } else {
-            // Active l'erreur de connexion
-            setLogError(true);
+        const fetchLogin = async () => {
 
-            // Réinitialise les champs de connexion
-            setLoginUserName("");
-            setLoginPassword("");
-        }
+            setIsLoading(true);
+            setLoaderLabel("Chargement du compte...");
+
+            const url = 'https://jdr-manager-server.vercel.app/login';
+            const data = {
+                email: loginUserName,
+                password: loginPassword
+            };
+    
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then((response) => response.json())
+            .then((data) => tryLogin(data))
+            .catch(() => setLogError(true))
+            .finally(() => setIsLoading(false))
+        };
+
+        fetchLogin();
     };
+
+    function tryLogin(data)
+    {
+        if(data.token)
+        {
+            navigate(`/select/${data.id}`)
+        }
+        else if(data.message === "Passwords does not match")
+        {
+            console.log("MDP incorrect");
+            console.log(data)
+        }
+        else if(data.message === "Email not found")
+        {
+            console.log("Email incorrect");
+            console.log(data)
+        }
+        else
+            console.log("Error login")
+    }
 
     // #endregion
     // #region RETURN
@@ -113,7 +116,7 @@ const Home = () => {
                             <div className="inputs">
                                 <input
                                     type="text"
-                                    className="input"
+                                    className="cta-brown-light"
                                     placeholder="Username"
                                     value={loginUserName}
                                     onChange={(e) => setLoginUserName(e.target.value)}
@@ -123,15 +126,18 @@ const Home = () => {
     
                                 <input
                                     type="password"
-                                    className="input"
+                                    className="cta-brown-light"
                                     placeholder="Password"
                                     value={loginPassword}
                                     onChange={(e) => setLoginPassword(e.target.value)}
                                     required
                                 />
                             </div>
-                            <button className="play-button" type="submit">Se connecter</button>
+
+                            <button className="cta-brown" type="submit">Se connecter</button>
+
                             {logError && <p className="log-error">Erreur de connexion</p>}
+
                         </form>
     
                         <div className="scinder"></div>
@@ -139,7 +145,17 @@ const Home = () => {
                     </div>
                 </>
             ) : (
+
+                <>
+                
                 <span className="loader"></span>
+
+                <div className="loader-label">
+                    <p>{loaderLabel}</p>
+                </div>
+
+                </>
+                
             )}
         </div>
     );

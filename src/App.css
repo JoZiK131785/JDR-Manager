@@ -50,3 +50,45 @@
     /* #endregion */
 
   /* #endregion */
+
+/* #region ##### AVATAR ##### */
+
+.avatar-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.argonien1{
+    background-image: url(../public/img/Argonien1.jpg);
+}
+
+.argonien2{
+    background-image: url(../public/img/Argonien2.jpg);
+}
+
+.argonien3{
+    background-image: url(../public/img/Argonien3.jpg);
+}
+
+.argonien4{
+    background-image: url(../public/img/Argonien4.jpg);
+}
+
+.argonien5{
+    background-image: url(../public/img/Argonien5.jpg);
+}
+
+.breton1{
+    background-image: url(../public/img/Breton1.jpg);
+}
+
+.khajiit1{
+    background-image: url(../public/img/Khajiit1.jpg);
+}
+
+.rougegarde1{
+    background-image: url(../public/img/Rougegarde1.jpg);
+}
+
+/* #endregion */
