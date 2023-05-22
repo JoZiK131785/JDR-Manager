@@ -2,6 +2,8 @@
 
 import "./index.css";
 
+import React, { useState, useEffect } from "react";
+
 import setAvatar from "../../utils/functions";
 
 // #endregion
@@ -13,11 +15,17 @@ const PlayerMainCard = ({ player }) => {
     const { name, attributes, session } = player;
     const { title, content } = session;
     const { race, level } = attributes;
+    
+    const [width, setWidth] = useState(window.innerWidth);
 
     // #endregion
     // #region FUNCTIONS
 
-
+    useEffect(() => {
+        const handleResize = () => setWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     // #endregion
     // #region RETURN
@@ -29,8 +37,8 @@ const PlayerMainCard = ({ player }) => {
             <h2>{ name }</h2>
             <h3>{ race }</h3>
             <h4>{ 'Niveau ' + level }</h4>
-            <p className="title-label">Derniere session : <span>{ title }</span></p>
-            <p className="content-label">{ content }</p>
+            { width > 800 && <p className="title-label">Derniere session : <span>{ title }</span></p> }
+            { width > 800 && <p className="content-label">{ content }</p> }
             
         </div>
     )

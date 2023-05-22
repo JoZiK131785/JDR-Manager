@@ -18,9 +18,16 @@ const SelectPlayer = () => {
     const [playersList, setPlayersList] = useState([]);
     const [currentPlayer, setCurrentPlayer] = useState(null);
     const { userId } = useParams();
+    const [width, setWidth] = useState(window.innerWidth);
 
     // #endregion
     // #region FUNCTIONS
+
+    useEffect(() => {
+        const handleResize = () => setWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     useEffect(() => {
         setIsLoading(true);
@@ -59,13 +66,13 @@ const SelectPlayer = () => {
 
                         <div className="player-cta">
 
-                            <ul className="player-list">
+                            { width > 800 && <ul className="player-list">
                                 {playersList.map((player) => (
                                     <li key={ player._id } className="cta-brown-light"> { player.name } </li>
                                 ))}
-                            </ul>
+                            </ul> }
 
-                            <button className="cta-brown-light" disabled >Add New Player</button>
+                            { width > 800 && <button className="cta-brown-light" disabled >Add New Player</button> }
 
                             <button className="cta-brown">Play</button>
 
