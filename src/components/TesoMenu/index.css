@@ -1,0 +1,16 @@
+.teso-main-menu {
+    position: absolute;
+
+    top: 8vh;
+    right: 15vw;
+    left: 5vw;
+    bottom: 25vh;
+
+    opacity: 1;
+    transition: .3s ;
+}
+
+.teso-main-menu-hide {
+    opacity: 0;
+    transition: .3s ;
+}

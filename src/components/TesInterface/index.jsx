@@ -4,10 +4,8 @@ import './index.css';
 
 import React, { useState } from 'react';
 
-/* import PlayerList from '../PlayerList'; */
 import MenuUI from '../MenuUI';
-/* import StatusUI from '../StatusUI';
-import TesoMenu from '../TesoMenu'; */
+import TesoMenu from '../TesoMenu';
 
 // #endregion
 
@@ -35,10 +33,8 @@ const TesInterface = () => {
     <section className="teso-lobby-panel">
 
       <MenuUI  toggle={ toggleMenuPanel } />
-
-      {/* { menuPanel === 0 || menuPanel === 1 ? <StatusUI player={ JSON.parse(localStorage.getItem('currentPlayer')) }/> : undefined } */}
       
-      {/* { menuPanel !== 0 ? <TesoMenu socket={ socket } player={ JSON.parse(localStorage.getItem('currentPlayer')) } index= { menuPanel } /> : undefined } */}
+      { menuPanel !== 0 ? <TesoMenu player={ JSON.parse(localStorage.getItem('currentPlayer')) } index= { menuPanel } /> : undefined }
 
     </section>
 

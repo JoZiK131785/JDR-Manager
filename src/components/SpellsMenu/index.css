@@ -1,0 +1,16 @@
+.spells-interface {
+    height: 100%;
+    margin-block: 0;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: var(--main-font);
+    font-size: 24px;
+    list-style-type: none;
+    user-select: none;
+}
