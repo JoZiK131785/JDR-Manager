@@ -3,7 +3,7 @@
 import "./index.css";
 
 import React, { useState, useEffect } from "react";
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 import PlayerMainCard from "../PlayerMainCard";
 
@@ -19,6 +19,7 @@ const SelectPlayer = () => {
     const [currentPlayer, setCurrentPlayer] = useState(null);
     const { userId } = useParams();
     const [width, setWidth] = useState(window.innerWidth);
+    const Navigate = useNavigate();
 
     // #endregion
     // #region FUNCTIONS
@@ -51,6 +52,11 @@ const SelectPlayer = () => {
             setCurrentPlayer(playersList[0])
     }, [ playersList, currentPlayer ]);
 
+    const startGame = () => {
+        localStorage.setItem("currentPlayer", JSON.stringify(currentPlayer));
+        Navigate("/tes");
+    }
+
     // #endregion
     // #region RETURN
 
@@ -66,15 +72,15 @@ const SelectPlayer = () => {
 
                         <div className="player-cta">
 
-                            { width > 800 && <ul className="player-list">
+                            { width > 1024 && <ul className="player-list">
                                 {playersList.map((player) => (
                                     <li key={ player._id } className="cta-brown-light"> { player.name } </li>
                                 ))}
                             </ul> }
 
-                            { width > 800 && <button className="cta-brown-light" disabled >Add New Player</button> }
+                            { width > 1024 && <button className="cta-brown-light" disabled >Add New Player</button> }
 
-                            <button className="cta-brown">Play</button>
+                            <button className="cta-brown" onClick={ () => startGame() }>Play</button>
 
                         </div>
 

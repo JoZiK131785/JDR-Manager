@@ -158,7 +158,10 @@ const Home = () => {
                 
             )}
         </div>
-    );
+    )
+
+    // #endregion
+
 };
 
 export default Home;

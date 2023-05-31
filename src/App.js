@@ -8,6 +8,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import Home from './components/Home';
 import SelectPlayer from './components/SelectPlayer';
+import TesInterface from './components/TesInterface';
 
 // #endregion IMPORTS
 
@@ -17,6 +18,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />}></Route>
       <Route path="/select/:userId" element={<SelectPlayer />}></Route>
+      <Route path="/tes" element={<TesInterface />}></Route>
     </Routes>
   );
 }
