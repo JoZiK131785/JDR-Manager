@@ -3,7 +3,7 @@
 import './index.css';
 
 import UserMenu from '../UserMenu';
-/* import InventaireMenu from '../InventaireMenu'; */
+import InventaireMenu from '../InventaireMenu';
 import SkillsMenu from '../SkillsMenu';
 import SpellsMenu from '../SpellsMenu';
 
@@ -32,7 +32,7 @@ const TesoMenu = ({ index, player }) => {
 
             { index === 2 ? <UserMenu player={ player } /> : undefined }
             
-            {/* { index === 3 && <InventaireMenu player={ player } /> } */}
+            { index === 3 && <InventaireMenu player={ player } /> }
 
             { index === 4 && <SkillsMenu player={ player } /> }
 

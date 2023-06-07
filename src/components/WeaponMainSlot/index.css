@@ -1,0 +1,97 @@
+.weapon-main-slot {
+    width: 280px;
+    height: 90px;
+
+    position: relative;
+    transition: .3s;
+}
+
+.weapon-main-avatar {
+    position: absolute;
+
+    left: 5px;
+    top: 5px;
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 3px solid var(--color-brown-dark);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.weapon-main-name {
+    position: absolute;
+
+    top: 5px;
+    left: 70px;
+    right: 35px;
+    bottom: 50px;
+    text-align: left;
+
+    font-size: 16px;
+    text-align: center;
+}
+
+.weapon-main-level {
+    position: absolute;
+
+    left: 80px;
+    bottom: 2px;
+
+    font-size: 12px;
+}
+
+.weapon-main-weight {
+    position: absolute;
+
+    right: 50px;
+    bottom: 2px;
+
+    font-size: 12px;
+}
+
+.weapon-main-enchantement {
+    position: absolute;
+
+    left: 80px;
+    top: 40px;
+    right: 40px;
+    
+    text-align: left;
+
+    font-size: 12px;
+    text-align: center;
+}
+
+.weapon-main-degats {
+    position: absolute;
+
+    left: 70px;
+    right: 40px;
+    bottom: 0;
+    
+    text-align: right;
+    padding-right: 70px;
+
+    font-size: 15px;
+    border-bottom: 3px solid var(--color-brown-dark);
+}
+
+.weapon-main-cta {
+    position: absolute;
+
+    top: 5px;
+    bottom: 50px;
+    right: 5px;
+    left: 245px;
+
+    padding: 0;
+
+    font-size: 18px;
+    background-color: var(--color-brown-dark-shadow);
+    border-radius: 10px;
+    border: 2px solid var(--color-brown-dark);
+}

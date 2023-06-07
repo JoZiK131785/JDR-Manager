@@ -1,0 +1,45 @@
+.inventory-interface {
+    height: 100%;
+    margin-block: 0;
+
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+
+    font-family: var(--main-font);
+    font-size: 24px;
+    list-style-type: none;
+    user-select: none;
+}
+
+.inventory-buttons {
+    grid-row: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.inventory-main-button {
+    padding-inline: 2vw;
+    
+    background-color: rgba(69, 35, 0, 0.7);
+    border: solid 3px rgb(69, 35, 0);
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.inventory-main-button:hover {
+    scale: 1.03;
+    box-shadow: 5px 5px 2.5px rgb(0, 0, 0, 0.7);
+    background-color: rgba(167, 84, 0, 0.7);
+}
+
+.inventory-weight {
+    font-size: 24px;
+    padding-inline: 2vw;
+    
+    background-color: var(--color-brown-shadow);
+    border: solid 3px rgb(69, 35, 0);
+    border-radius: 10px;
+}

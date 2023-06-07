@@ -1,0 +1,83 @@
+.armor-main-slot {
+    width: 280px;
+    height: 90px;
+
+    position: relative;
+    transition: .3s;
+}
+
+.armor-main-avatar {
+    position: absolute;
+
+    left: 5px;
+    top: 5px;
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 3px solid var(--color-brown-dark);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.armor-main-name {
+    position: absolute;
+
+    top: 5px;
+    left: 70px;
+    right: 35px;
+    bottom: 50px;
+    text-align: left;
+
+    font-size: 14px;
+    text-align: center;
+}
+
+.armor-main-level {
+    position: absolute;
+
+    left: 80px;
+    bottom: 2px;
+
+    font-size: 12px;
+}
+
+.armor-main-weight {
+    position: absolute;
+
+    right: 50px;
+    bottom: 2px;
+
+    font-size: 12px;
+}
+
+.armor-main-enchantement {
+    position: absolute;
+
+    left: 80px;
+    top: 52px;
+    right: 40px;
+    
+    text-align: left;
+
+    font-size: 11px;
+    text-align: center;
+}
+
+.armor-main-cta {
+    position: absolute;
+
+    top: 5px;
+    bottom: 50px;
+    right: 5px;
+    left: 245px;
+
+    padding: 0;
+
+    font-size: 18px;
+    background-color: var(--color-brown-dark-shadow);
+    border-radius: 10px;
+    border: 2px solid var(--color-brown-dark);
+}
