@@ -1,0 +1,96 @@
+.user-interface {
+    height: 100%;
+    padding-inline: 3vw;
+    margin-block: 0;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    justify-items: center;
+    text-align: center;
+
+    font-family: var(--main-font);
+    list-style-type: none;
+    user-select: none;
+}
+
+.user-avatar {
+    grid-row: 1/12;
+    grid-column: 1/4;
+    align-self: center;
+
+    width: 80%;
+    height: 70%;
+
+    border-radius: 30px;
+    border: 3px solid rgb(69,35,0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.user-name {
+    grid-row: 11/13;
+    grid-column: 1/4;
+    align-self: flex-end;
+
+    font-size: 40px;
+    color: rgb(69,35,0);
+}
+
+.user-race {
+    grid-row: 13/15;
+    grid-column: 1/4;
+    align-self: top;
+
+    font-size: 26px;
+    color: rgb(165, 83, 0);
+}
+
+.user-level {
+    grid-row: 3;
+    grid-column: 4/6;
+    align-self: top;
+
+    font-size: 30px;
+    color: rgb(69,35,0);
+}
+
+.user-progression-level {
+    grid-row: 3;
+    grid-column: 6/7;
+    justify-self: left;
+
+    width: 80%;
+    padding-top: 1vh;
+
+    font-size: 20px;
+    background-color: rgb(69,35,0);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.user-bar-level {
+    grid-row: 4/6;
+    grid-column: 4/7;
+    position: relative;
+
+    width: 90%;
+    margin-block: 3.5vh;
+
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.user-bar-level-actu {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+
+    background-color: rgb(165, 83, 0);
+    border-radius: 30px;
+    transition: .5s;
+}

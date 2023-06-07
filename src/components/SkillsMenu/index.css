@@ -1,0 +1,110 @@
+.skills-interface {
+    height: 100%;
+    margin-block: 0;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: var(--main-font);
+    font-size: 24px;
+    list-style-type: none;
+    user-select: none;
+}
+
+.skills-action {
+    height: 100%;
+    margin-block: 0;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: var(--main-font);
+    font-size: 24px;
+    list-style-type: none;
+    user-select: none;
+}
+
+.weapon-title {
+    grid-row: 9;
+    grid-column: 1/4;
+
+    margin-inline: 2vw;
+    
+    background-color: rgba(69, 35, 0, 0.7);
+    border: solid 3px rgb(69, 35, 0);
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.weapon-title:hover {
+    scale: 1.03;
+    box-shadow: 5px 5px 2.5px rgb(0, 0, 0, 0.7);
+    background-color: rgba(167, 84, 0, 0.7);
+}
+
+.warrior-title {
+    grid-row: 9;
+    grid-column: 4/7;
+
+    margin-inline: 2vw;
+    
+    background-color: rgba(69, 35, 0, 0.7);
+    border: solid 3px rgb(69, 35, 0);
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.warrior-title:hover {
+    scale: 1.03;
+    box-shadow: 5px 5px 2.5px rgb(0, 0, 0, 0.7);
+    background-color: rgba(167, 0, 0, 0.7);
+}
+
+.sorcerer-title {
+    grid-row: 9;
+    grid-column: 7/10;
+
+    margin-inline: 2vw;
+    
+    background-color: rgba(69, 35, 0, 0.7);
+    border: solid 3px rgb(69, 35, 0);
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.sorcerer-title:hover {
+    scale: 1.03;
+    box-shadow: 5px 5px 2.5px rgb(0, 0, 0, 0.7);
+    background-color: rgba(58, 56, 231, 0.7);
+}
+
+.thief-title {
+    grid-row: 9;
+    grid-column: 10/13;
+
+    margin-inline: 2vw;
+    
+    background-color: rgba(69, 35, 0, 0.7);
+    border: solid 3px rgb(69, 35, 0);
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.thief-title:hover {
+    scale: 1.03;
+    box-shadow: 5px 5px 2.5px rgb(0, 0, 0, 0.7);
+    background-color: rgba(7, 150, 0, 0.7);
+}
+
+.buttons-list {
+    grid-column: 10/13;
+    grid-row: 3/6;
+}

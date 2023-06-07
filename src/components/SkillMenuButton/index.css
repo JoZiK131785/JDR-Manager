@@ -1,0 +1,26 @@
+.skill-button {
+    border: solid 3px rgb(69, 35, 0);
+    background-color: rgba(69, 35, 0, 0.5);
+    margin-inline: 2vw;
+    margin-block: 2vh;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.Critique:hover {
+    scale: 1.03;
+    box-shadow: 5px 5px 2.5px rgb(0, 0, 0, 0.7);
+    background-color: rgba(7, 150, 0, 0.5);
+}
+
+.Reussite:hover {
+    scale: 1.03;
+    box-shadow: 5px 5px 2.5px rgb(0, 0, 0, 0.7);
+    background-color: rgba(167, 84, 0, 0.5);
+}
+
+.Echec:hover {
+    scale: 1.03;
+    box-shadow: 5px 5px 2.5px rgb(0, 0, 0, 0.7);
+    background-color: rgba(167, 0, 0, 0.5);
+}

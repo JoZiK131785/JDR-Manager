@@ -14,7 +14,7 @@ const PlayerMainCard = ({ player }) => {
 
     const { name, attributes, session } = player;
     const { title, content } = session;
-    const { race, level } = attributes;
+    const { race, avatar, level } = attributes;
     
     const [width, setWidth] = useState(window.innerWidth);
 
@@ -33,7 +33,7 @@ const PlayerMainCard = ({ player }) => {
     return (
         <div className="player-main-card">
             
-            <div className={ 'avatar-image avatar-panel ' + setAvatar(player) }></div>
+            <div className={ 'avatar-image avatar-panel ' + setAvatar(avatar) }></div>
             <h2>{ name }</h2>
             <h3>{ race }</h3>
             <h4>{ 'Niveau ' + level }</h4>

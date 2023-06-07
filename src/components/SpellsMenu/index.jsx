@@ -1,19 +1,20 @@
+// #region IMPORTS
+
 import './index.css';
 
 import SpellSlot from '../SpellSlot';
 
+// #endregion
+
 const SpellsMenu = ({ player }) => {
 
-    const don1 = player.spells.don1;
-    const don2 = player.spells.don2;
-    const don3 = player.spells.don3;
-    const mundus1 = player.spells.mundus1;
-    const mundus2 = player.spells.mundus2;
-    const mundus3 = player.spells.mundus3;
-    const sort1 = player.spells.sort1;
-    const sort2 = player.spells.sort2;
-    const sort3 = player.spells.sort3;
+    // #region INIT
+
+    const { don1, don2, don3, mundus1, mundus2, mundus3, sort1, sort2, sort3 } = player.spells;
     const level = player.attributes.level;
+
+    // #endregion
+    // #region RETURN
 
     return(
         <ul className="spells-interface">
@@ -28,6 +29,8 @@ const SpellsMenu = ({ player }) => {
             { sort3 === null ? undefined : <SpellSlot spellsName={ sort3.name } spellsSchool={ sort3.school } spellsCount={ sort3.count } spellsDesc={ sort3.desc } type="sort" /> }
         </ul>
     )
+
+    // #endregion
 }
 
 export default SpellsMenu;

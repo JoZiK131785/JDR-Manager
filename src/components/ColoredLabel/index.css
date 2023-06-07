@@ -1,0 +1,138 @@
+.regen-user-vita {
+    grid-column: 4/5;
+    grid-row: 9;
+
+    width: 80%;
+    padding-top: 1vh;
+
+    color: rgba(159,0,0);
+    font-size: 14px;
+}
+
+.actu-user-vita {
+    grid-column: 5/6;
+    grid-row: 9;
+
+    width: 80%;
+    padding-top: 1vh;
+
+    background-color: rgba(159,0,0);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.max-user-vita {
+    grid-column: 6/7;
+    grid-row: 9;
+
+    width: 80%;
+    padding-top: 1vh;
+
+    background-color: rgba(159,0,0);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.regen-user-magicka {
+    grid-column: 4/5;
+    grid-row: 11;
+
+    width: 80%;
+    padding-top: 1vh;
+
+    color: rgb(85, 90, 187);
+}
+
+.actu-user-magicka {
+    grid-column: 5/6;
+    grid-row: 11;
+
+    width: 80%;
+    padding-top: 1vh;
+
+    background-color: rgba(0,9,159);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.max-user-magicka {
+    grid-column: 6/7;
+    grid-row: 11;
+
+    width: 80%;
+    padding-top: 1vh;
+
+    background-color: rgba(0,9,159);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.regen-user-stamina {
+    grid-column: 4/5;
+    grid-row: 13;
+
+    width: 80%;
+    padding-top: 1vh;
+
+    color: rgba(6,159,0);
+}
+
+.actu-user-stamina {
+    grid-column: 5/6;
+    grid-row: 13;
+
+    width: 80%;
+    padding-top: 1vh;
+
+    background-color: rgba(6,159,0);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.max-user-stamina {
+    grid-column: 6/7;
+    grid-row: 13;
+
+    width: 80%;
+    padding-top: 1vh;
+
+    background-color: rgba(6,159,0);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.regen-user-title {
+    grid-column: 4/5;
+    grid-row: 7;
+
+    width: 80%;
+    padding-top: 1vh;
+
+    background-color: rgb(69,35,0);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.actu-user-title {
+    grid-column: 5/6;
+    grid-row: 7;
+
+    width: 80%;
+    padding-top: 1vh;
+
+    background-color: rgb(69,35,0);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.max-user-title {
+    grid-column: 6/7;
+    grid-row: 7;
+
+    width: 80%;
+    padding-top: 1vh;
+
+    background-color: rgb(69,35,0);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+}

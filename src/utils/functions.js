@@ -1,6 +1,6 @@
-export default function setAvatar(player)
+export default function setAvatar(avatar)
     {
-        switch(player.attributes.avatar)
+        switch(avatar)
         {
             case 11:
                 return "argonien1";
