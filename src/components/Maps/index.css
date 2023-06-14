@@ -1,0 +1,45 @@
+.map {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 2vw;
+}
+
+.first-panel {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 1px;
+    background-color: white;
+}
+
+.second-panel {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(41, 24, 0);
+}
+
+.map-panel {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.map-panel img {
+    width: 100%;
+    height: 100%;
+}
+
+.map-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1vh;
+    align-items: center;
+}

@@ -6,6 +6,7 @@ import UserMenu from '../UserMenu';
 import InventaireMenu from '../InventaireMenu';
 import SkillsMenu from '../SkillsMenu';
 import SpellsMenu from '../SpellsMenu';
+import Maps from '../Maps';
 
 // #endregion
 
@@ -38,7 +39,7 @@ const TesoMenu = ({ index, player }) => {
 
             { index === 5 && <SpellsMenu player={ player } /> }
 
-            { index === 6 && "6" }
+            { index === 6 && <Maps /> }
 
         </section>
     );

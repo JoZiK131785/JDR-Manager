@@ -4,7 +4,7 @@ import "./index.css";
 
 import React, { useState, useEffect } from "react";
 
-import setAvatar from "../../utils/functions";
+import {setAvatar} from "../../utils/functions";
 
 // #endregion
 

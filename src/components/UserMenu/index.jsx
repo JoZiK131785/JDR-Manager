@@ -2,7 +2,7 @@ import './index.css';
 
 import ColoredLabel from '../ColoredLabel'
 
-import setAvatar from "../../utils/functions";
+import { setAvatar } from "../../utils/functions";
 
 const UserMenu = ({ player }) => {
 
