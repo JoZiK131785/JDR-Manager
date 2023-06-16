@@ -7,23 +7,11 @@ import InventaireMenu from '../InventaireMenu';
 import SkillsMenu from '../SkillsMenu';
 import SpellsMenu from '../SpellsMenu';
 import Maps from '../Maps';
+import Save from '../Save';
 
 // #endregion
 
 const TesoMenu = ({ index, player }) => {
-
-    function updatePlayerOnDB(player)
-    {
-        fetch(`http://localhost:4000/players/${player._id}`, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(player),
-        })
-            .then(response => response.json())
-            .catch(error => console.error('Error updating player:', error));
-    }
 
     // #region RETURN
 
@@ -40,6 +28,8 @@ const TesoMenu = ({ index, player }) => {
             { index === 5 && <SpellsMenu player={ player } /> }
 
             { index === 6 && <Maps /> }
+
+            { index === 7 && <Save /> }
 
         </section>
     );

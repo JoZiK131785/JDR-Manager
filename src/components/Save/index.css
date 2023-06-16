@@ -1,0 +1,25 @@
+.save-ui {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    user-select: none;
+}
+
+.menu-icon {
+    height: 60px;
+    width: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 30px;
+    border: solid 3px rgb(69, 35, 0);
+    background-color: rgba(7, 150, 0, 0.5);
+    user-select: none;
+}

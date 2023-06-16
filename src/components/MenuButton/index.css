@@ -26,66 +26,79 @@
 }
 
 .info {
-    bottom: 75vh;
+    bottom: 78vh;
 
     transition: .8s;
 }
 
 .info-hide {
     right: -100vw;
-    bottom: 75vh;
+    bottom: 78vh;
 
     transition: .8s;
 }
 
 .inventaire {
-    bottom: 60vh;
+    bottom: 66vh;
 
     transition: .7s;
 }
 
 .inventaire-hide {
     right: -100vw;
-    bottom: 60vh;
+    bottom: 66vh;
 
     transition: .7s;
 }
 
 .competences {
-    bottom: 45vh;
+    bottom: 54vh;
 
     transition: .6s;
 }
 
 .competences-hide {
     right: -100vw;
-    bottom: 45vh;
+    bottom: 54vh;
 
     transition: .6s;
 }
 
 .sorts {
-    bottom: 30vh;
+    bottom: 42vh;
 
     transition: .5s;
 }
 
 .sorts-hide {
     right: -100vw;
-    bottom: 30vh;
+    bottom: 42vh;
 
     transition: .5s;
 }
 
 .roll {
-    bottom: 15vh;
+    bottom: 30vh;
 
     transition: .4s;
 }
 
 .roll-hide {
     right: -100vw;
-    bottom: 15vh;
+    bottom: 30vh;
+
+    transition: .4s;
+}
+
+.save {
+    bottom: 10vh;
+
+    transition: .4s;
+}
+
+.save-hide {
+    right: -100vw;
+    bottom: 10vh;
 
     transition: .4s;
 }

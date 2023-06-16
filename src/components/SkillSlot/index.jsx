@@ -1,5 +1,4 @@
 import './index.css';
-import PropTypes from 'prop-types';
 
 const SkillSlot = ({ level, progression, pallier, type, skill, toggle, index }) => {
 
@@ -12,14 +11,6 @@ const SkillSlot = ({ level, progression, pallier, type, skill, toggle, index }) 
             <p className={ type + "-skill" }>{ skill }</p>
         </section>
     )
-}
-
-SkillSlot.propTypes = {
-    level: PropTypes.number,
-    progression: PropTypes.number,
-    pallier: PropTypes.number,
-    type: PropTypes.string,
-    skill: PropTypes.string,
 }
 
 export default SkillSlot;

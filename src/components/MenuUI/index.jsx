@@ -34,6 +34,7 @@ const MenuUI = ({ toggle }) => {
                 <MenuButton type="competences" bool={ isOpen } toggle={ toggle } />
                 <MenuButton type="sorts" bool={ isOpen } toggle={ toggle } />
                 <MenuButton type="roll" bool={ isOpen } toggle={ toggle } />
+                <MenuButton type="save" bool={ isOpen } toggle={ toggle } />
             </ul>
         </section>
     );
