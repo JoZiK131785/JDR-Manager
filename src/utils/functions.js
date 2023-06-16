@@ -25,9 +25,9 @@ function setAvatar(avatar) {
 function setMap(map) {
     switch (map) {
         case 1:
-            return "/img/nirn.jpg";
+            return "/img/Nirn.jpg";
         case 2:
-            return "/img/tamriel.jpg";
+            return "/img/Tamriel.jpg";
         case 3:
             return "/img/Belkarth.jpg";
         default:
