@@ -18,8 +18,8 @@
 .current-armor {
     height: 100%;
     width: 100%;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }

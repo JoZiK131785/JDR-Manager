@@ -17,7 +17,15 @@ const InventaireMenu = ({ player }) => {
     {
         let weight = 0;
         player.inventaire.forEach((item) => {
-            item.count ? weight += item.weight * item.count : weight += item.weight;
+            item.count > 1 ? weight += (item.weight * item.count) : weight += item.weight;
+        });
+
+        player.weapons.forEach((weapon) => {
+            weight += weapon.weight;
+        });
+
+        player.armor.forEach((armor) => {
+            weight += armor.weight;
         });
         
         return weight;

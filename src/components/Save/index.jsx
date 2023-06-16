@@ -1,5 +1,5 @@
 import './index.css';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileCircleCheck } from '@fortawesome/free-solid-svg-icons'
 
@@ -16,16 +16,7 @@ const Save = () => {
         setIsSaved(prevIsSaved => !prevIsSaved);
     }
 
-    useEffect(() => {
-        if (isSaving) {
-            const player = JSON.parse(localStorage.getItem('currentPlayer'));
-            if (player) {
-                updatePlayerOnDB(player);
-            }
-        }
-    }, [isSaving]);
-
-    function updatePlayerOnDB(player) {
+    const updatePlayerOnDB = useCallback((player) => {
         setLoaderLabel("Sauvegarde en cours...");
 
         fetch(`https://jdr-manager-server.vercel.app/players/${player._id}`, {
@@ -50,7 +41,16 @@ const Save = () => {
                     setLoaderLabel("");
                 }, 2000);
             });
-    }
+    }, []);
+
+    useEffect(() => {
+        if (isSaving) {
+            const player = JSON.parse(localStorage.getItem('currentPlayer'));
+            if (player) {
+                updatePlayerOnDB(player);
+            }
+        }
+    }, [isSaving, updatePlayerOnDB]);
 
     return (
         <section className="save-ui">
