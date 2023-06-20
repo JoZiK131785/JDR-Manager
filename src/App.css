@@ -92,3 +92,113 @@
 }
 
 /* #endregion */
+
+
+
+/* GANTS */
+
+.gant-ragnard {
+    background-image: url(../public/img/GantsCuirRagnard.jpg);
+}
+
+.casque-ragnard {
+    background-image: url(../public/img/CasqueCuirRagnard.webp);
+}
+
+
+/* ARTISANAT */
+
+.epee-acier {
+    background-image: url(../public/img/epeeAcier.jpg);
+}
+
+
+/* ARTISANAT */
+
+.poudre-os {
+    background-image: url(../public/img/PoudreOs.jpg);
+}
+
+.pierre-glace {
+    background-image: url(../public/img/PierreGlace.jpg);
+}
+
+.pierre-feu {
+    background-image: url(../public/img/PierreFeu.jpg);
+}
+
+.pierre-foudre {
+    background-image: url(../public/img/PierreFoudre.jpg);
+}
+
+.minerai-fer {
+    background-image: url(../public/img/MineraiFer.jpg);
+}
+
+.minerai-acier {
+    background-image: url(../public/img/MineraiAcier.jpg);
+}
+
+/* POTION */
+
+.potion-respiration {
+    background-image: url(../public/img/PotionRespiration.jpg);
+}
+
+.potion-vigueur {
+    background-image: url(../public/img/PotionVigueur.jpg);
+}
+
+.potion-sante {
+    background-image: url(../public/img/PotionVie.png);
+}
+
+.dague-fer {
+    background-image: url(../public/img/DagueFer.png);
+}
+
+.bottes-ragnard {
+    background-image: url(../public/img/BottesCuirRagnard.png);
+}
+
+/* OTHER */
+
+.or {
+    background-image: url(../public/img/Septims.jpg);
+}
+
+.baton-destruction-feu {
+    background-image: url(../public/img/BatonFeu.png);
+}
+
+.baton-guerrison {
+    background-image: url(../public/img/BatonGuerison.png);
+}
+
+.baton-destruction-glace {
+    background-image: url(../public/img/BatonGlace.png);
+}
+
+.baton-destruction-foudre {
+    background-image: url(../public/img/BatonFoudre.png);
+}
+
+.chapeau-lin {
+    background-image: url(../public/img/ChapeauLin.jpg);
+}
+
+.chassures-lin {
+    background-image: url(../public/img/ChassureLin.jpg);
+}
+
+.robe-lin {
+    background-image: url(../public/img/RobeLin.jpg);
+}
+
+.fleur-lin {
+    background-image: url(../public/img/FleurLin.png);
+}
+
+.sort-courage {
+    background-image: url(../public/img/LivreSortCourage.png);
+}

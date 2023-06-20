@@ -9,7 +9,6 @@ const ArmorMainSlot = ({ item }) => {
             <p className="armor-main-weight">{ "P : " + item.weight }</p>
             <p className="armor-main-level">{ "Niv " + item.level }</p>
             <p className="armor-main-enchantement">{ item.enchantement }</p>
-            <button className="armor-main-cta">{ "<>" }</button>
         </section>
     )
 }

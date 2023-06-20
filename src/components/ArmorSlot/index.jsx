@@ -10,7 +10,6 @@ const ArmorSlot = ({ item }) => {
             <p className="armor-degats"></p>
             <p className="armor-level">{ "Niv " + item.level }</p>
             <p className="armor-enchantement">{ item.enchantement }</p>
-            <button className="armor-cta">{ "<>" }</button>
         </section>
     )
 }

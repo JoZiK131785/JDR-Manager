@@ -61,13 +61,3 @@
 .armor-cta:hover {
     background-color: var(--color-brown-shadow);
 }
-
-/* GANTS */
-
-.gant-ragnard {
-    background-image: url(../../../public/img/GantsCuirRagnard.jpg);
-}
-
-.casque-ragnard {
-    background-image: url(../../../public/img/CasqueCuirRagnard.webp);
-}

@@ -124,9 +124,3 @@
 .weapon-b:hover {
     background-color: var(--color-brown-shadow);
 }
-
-/* ARTISANAT */
-
-.epee-acier {
-    background-image: url(../../../public/img/epeeAcier.jpg);
-}
