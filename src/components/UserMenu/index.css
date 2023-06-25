@@ -94,3 +94,55 @@
     border-radius: 30px;
     transition: .5s;
 }
+
+.user-mundus {
+    grid-row: 3;
+    grid-column: 7/9;
+    align-self: top;
+
+    font-size: 30px;
+    color: rgb(69,35,0);
+}
+
+.user-progression-mundus {
+    grid-row: 3;
+    grid-column: 9/11;
+    justify-self: left;
+
+    width: 80%;
+    padding-top: 1vh;
+
+    font-size: 20px;
+    background-color: rgb(69,35,0);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.mundus-input {
+    grid-row: 4/6;
+    grid-column: 8;
+    justify-self: center;
+    align-self: center;
+
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.user-interface .mundus-input {
+    min-width: 5vw;
+    width: 5vw;
+}
+
+.mundus-down {
+    grid-row: 4/6;
+    grid-column: 9;
+    justify-self: center;
+    align-self: center;
+
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.user-interface .mundus-down {
+    min-width: 5vw;
+}

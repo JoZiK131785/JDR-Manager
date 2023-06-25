@@ -23,7 +23,7 @@ const ItemMenu = ({ item }) => {
                 <p className={"item-avatar " + id }></p>
                 <p className="item-name">{ name }</p>
                 <p className="item-count">{ "Qt : " + count }</p>
-                <p className="item-weight">{ "P : " + weight + " (" + (weight*count) + ")" }</p>
+                <p className="item-weight">{ "P : " + weight + " (" + (weight*count).toFixed(1) + ")" }</p>
                 <p className="item-description">{ description }</p>
             </div>
             <div className="item-menu-actions">

@@ -20,11 +20,16 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.mainsNues.level++;
                     newPlayer.skills.mainsNues.progression = progression + count - pallier;
                     newPlayer.skills.mainsNues.pallier = newPlayer.skills.mainsNues.level - 20;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                 {                   
                     newPlayer.skills.mainsNues.progression = progression + count;
                 }
+
+                if(count === 3)
+                    newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -43,9 +48,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.uneMain.level++;
                     newPlayer.skills.uneMain.progression = progression + count - pallier;
                     newPlayer.skills.uneMain.pallier = newPlayer.skills.uneMain.level;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.uneMain.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -64,9 +74,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.deuxMains.level++;
                     newPlayer.skills.deuxMains.progression = progression + count - pallier;
                     newPlayer.skills.deuxMains.pallier = newPlayer.skills.deuxMains.level;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.deuxMains.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -85,9 +100,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.bouclier.level++;
                     newPlayer.skills.bouclier.progression = progression + count - pallier;
                     newPlayer.skills.bouclier.pallier = newPlayer.skills.bouclier.level;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.bouclier.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -106,9 +126,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.arc.level++;
                     newPlayer.skills.arc.progression = progression + count - pallier;
                     newPlayer.skills.arc.pallier = newPlayer.skills.arc.level;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.arc.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -127,9 +152,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.baton.level++;
                     newPlayer.skills.baton.progression = progression + count - pallier;
                     newPlayer.skills.baton.pallier = newPlayer.skills.baton.level;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.baton.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -148,9 +178,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.intimidation.level++;
                     newPlayer.skills.intimidation.progression = progression + count - pallier;
                     newPlayer.skills.intimidation.pallier = newPlayer.skills.intimidation.level - 20;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.intimidation.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -169,9 +204,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.endurance.level++;
                     newPlayer.skills.endurance.progression = progression + count - pallier;
                     newPlayer.skills.endurance.pallier = newPlayer.skills.endurance.level - 20;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.endurance.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -190,9 +230,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.persuasion.level++;
                     newPlayer.skills.persuasion.progression = progression + count - pallier;
                     newPlayer.skills.persuasion.pallier = newPlayer.skills.persuasion.level - 20;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.persuasion.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -211,9 +256,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.vigilance.level++;
                     newPlayer.skills.vigilance.progression = progression + count - pallier;
                     newPlayer.skills.vigilance.pallier = newPlayer.skills.vigilance.level - 20;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.vigilance.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -232,9 +282,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.marchandage.level++;
                     newPlayer.skills.marchandage.progression = progression + count - pallier;
                     newPlayer.skills.marchandage.pallier = newPlayer.skills.marchandage.level - 20;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.marchandage.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -253,9 +308,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.fouille.level++;
                     newPlayer.skills.fouille.progression = progression + count - pallier;
                     newPlayer.skills.fouille.pallier = newPlayer.skills.fouille.level - 20;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.fouille.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -274,9 +334,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.artisanat.level++;
                     newPlayer.skills.artisanat.progression = progression + count - pallier;
                     newPlayer.skills.artisanat.pallier = newPlayer.skills.artisanat.level;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.artisanat.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -295,9 +360,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.armureLourde.level++;
                     newPlayer.skills.armureLourde.progression = progression + count - pallier;
                     newPlayer.skills.armureLourde.pallier = newPlayer.skills.armureLourde.level;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.armureLourde.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -316,9 +386,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.perception.level++;
                     newPlayer.skills.perception.progression = progression + count - pallier;
                     newPlayer.skills.perception.pallier = newPlayer.skills.perception.level - 20;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.perception.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -337,9 +412,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.illusion.level++;
                     newPlayer.skills.illusion.progression = progression + count - pallier;
                     newPlayer.skills.illusion.pallier = newPlayer.skills.illusion.level;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.illusion.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -358,9 +438,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.alteration.level++;
                     newPlayer.skills.alteration.progression = progression + count - pallier;
                     newPlayer.skills.alteration.pallier = newPlayer.skills.alteration.level;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.alteration.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -379,9 +464,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.destruction.level++;
                     newPlayer.skills.destruction.progression = progression + count - pallier;
                     newPlayer.skills.destruction.pallier = newPlayer.skills.destruction.level;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.destruction.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -400,9 +490,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.guerison.level++;
                     newPlayer.skills.guerison.progression = progression + count - pallier;
                     newPlayer.skills.guerison.pallier = newPlayer.skills.guerison.level;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.guerison.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -421,9 +516,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.conjuration.level++;
                     newPlayer.skills.conjuration.progression = progression + count - pallier;
                     newPlayer.skills.conjuration.pallier = newPlayer.skills.conjuration.level;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.conjuration.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -442,9 +542,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.enchantement.level++;
                     newPlayer.skills.enchantement.progression = progression + count - pallier;
                     newPlayer.skills.enchantement.pallier = newPlayer.skills.enchantement.level;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.enchantement.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -463,9 +568,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.armureLegere.level++;
                     newPlayer.skills.armureLegere.progression = progression + count - pallier;
                     newPlayer.skills.armureLegere.pallier = newPlayer.skills.armureLegere.level;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.armureLegere.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -484,9 +594,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.connaissances.level++;
                     newPlayer.skills.connaissances.progression = progression + count - pallier;
                     newPlayer.skills.connaissances.pallier = newPlayer.skills.connaissances.level - 20;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.connaissances.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -505,9 +620,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.agilite.level++;
                     newPlayer.skills.agilite.progression = progression + count - pallier;
                     newPlayer.skills.agilite.pallier = newPlayer.skills.agilite.level;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.agilite.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -526,9 +646,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.discretion.level++;
                     newPlayer.skills.discretion.progression = progression + count - pallier;
                     newPlayer.skills.discretion.pallier = newPlayer.skills.discretion.level - 20;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.discretion.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -547,9 +672,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.crochetage.level++;
                     newPlayer.skills.crochetage.progression = progression + count - pallier;
                     newPlayer.skills.crochetage.pallier = newPlayer.skills.crochetage.level - 20;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.crochetage.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -568,9 +698,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.precision.level++;
                     newPlayer.skills.precision.progression = progression + count - pallier;
                     newPlayer.skills.precision.pallier = newPlayer.skills.precision.level - 20;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.precision.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -589,9 +724,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.vol.level++;
                     newPlayer.skills.vol.progression = progression + count - pallier;
                     newPlayer.skills.vol.pallier = newPlayer.skills.vol.level - 20;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.vol.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -610,9 +750,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.alchimie.level++;
                     newPlayer.skills.alchimie.progression = progression + count - pallier;
                     newPlayer.skills.alchimie.pallier = newPlayer.skills.alchimie.level;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.alchimie.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
@@ -631,9 +776,14 @@ const SkillMenuButton = ({ type, player, count, index, toggleSkillindex }) => {
                     newPlayer.skills.armureMoyenne.level++;
                     newPlayer.skills.armureMoyenne.progression = progression + count - pallier;
                     newPlayer.skills.armureMoyenne.pallier = newPlayer.skills.armureMoyenne.level;
+
+                    newPlayer.attributes.progression += 1;
                 }
                 else
                     newPlayer.skills.armureMoyenne.progression = progression + count;
+
+                    if(count === 3)
+                        newPlayer.attributes.critique += 1;
 
                 // MAJ du joueur dans le localStorage
                 localStorage.setItem('currentPlayer', JSON.stringify(newPlayer))
